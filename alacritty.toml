@@ -1,0 +1,35 @@
+# Alacritty Configuration File
+
+[window]
+dimensions = { columns = 104, lines = 22 }
+padding = { x = 1, y = 1 }
+decorations = "Full"
+startup_mode = "Windowed"
+dynamic_title = true
+opacity = 0.80
+
+[font]
+normal = { family = "JetBrainsMonoNL Nerd Font Mono", style = "Regular" }
+bold = { family = "JetBrainsMonoNL Nerd Font Mono", style = "Bold" }
+italic = { family = "JetBrainsMonoNL Nerd Font Mono", style = "Italic" }
+size = 16.0
+offset = { x = 0, y = 1 }
+glyph_offset = { x = 0, y = 0 }
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[keyboard]
+bindings = [
+  { key = "C", mods = "Control|Shift", action = "Copy" },
+  { key = "V", mods = "Control|Shift", action = "Paste" },
+  { key = "Q", mods = "Control|Shift", action = "Quit" }
+]
+
+[general]
+#import = ["tokyo-night.toml"]
+
